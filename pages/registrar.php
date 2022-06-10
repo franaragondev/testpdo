@@ -16,7 +16,7 @@ if (isset($_POST['registrar'])) {
         try {
             $connection->prepare($sql)->execute([$nombre, $apellido, $usuario, md5($pass)]);
         } catch (Exception $error) {
-            header('Location: pages/error.php');
+            echo $error;
         }
     }
 }
