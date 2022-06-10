@@ -1,10 +1,10 @@
 <?php
 session_name('test');
 session_start();
-$host = 'localhost';
-$dbname = 'ceisbook';
-$username = 'fran';
-$password = '1234';
+$host = 'eu-cdbr-west-02.cleardb.net';
+$dbname = 'heroku_ac5d4f5b837d00a';
+$username = 'bb200ca034b8dd';
+$password = 'ff40ddcd';
 
 $options = [
     \PDO::ATTR_ERRMODE  => \PDO::ERRMODE_EXCEPTION,
